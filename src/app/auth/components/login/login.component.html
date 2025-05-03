@@ -1,0 +1,68 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<div class="main d-flex justify-content-center align-content-center ">
+ <mat-card class="text-center" >
+  <mat-card-content>
+    <div class="header text-center my-5 fw-bold fs-4">
+      <img class="log" src="assets/images/login.jpg">
+      <P class="sigin"> تسجيل الدخول</P>
+    </div>
+    <form  [formGroup]="loginForm">
+      <div class="email-input">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Login</mat-label>
+          <input
+            formControlName="email"
+            matInput
+            placeholder="البريد الالكتروني" required
+          />
+          <mat-error *ngIf="loginForm.controls['email'].hasError('required')">
+            البريد الالكتروني  <strong>مطلوب</strong> 
+            </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <span>
+          <a  class="aLink text-decoration-none" > نسيت الرقم السري</a>
+        </span>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>الرقم السري</mat-label>
+          <input formControlName="password" matInput [type]="hide ? 'password' : 'text'" required />
+          <button  mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"
+          [attr.aria-pressed]="hide">
+          <mat-icon>
+              {{hide ? 'visibility_off' : 'visibility'}}
+          </mat-icon>
+      </button>
+      <mat-error *ngIf="loginForm.controls['password'].hasError('required')">
+        الرقم السري <strong>مطلوب</strong> 
+        </mat-error>
+      </mat-form-field>
+      </div>
+      <button class="log-btn w-50 fs-5 rounded" mat-flat-button color="primary"  type="button" (click)="login(loginForm.value)"> تسجيل الدخول</button>
+    </form>
+
+    <div class="button-row">
+      <a class="text-link text-center fw-bold"  ><p> انشاء بريد الكتروني </p></a> 
+    </div>
+    <div class="share w-100 d-flex justify-content-center">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+    </div>
+  </mat-card-content>
+</mat-card>
+</div>

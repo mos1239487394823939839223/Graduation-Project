@@ -1,0 +1,67 @@
+mat-card {
+    width: 600px;
+    max-width: 600px;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    max-height: 700px;
+  }
+  
+  .main {
+    height: 710px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(70,217,124,1) 50%, rgba(5,93,13,1) 62%, rgba(52,107,47,1) 71%);
+     background-size: cover;
+  }
+ 
+  .full-width {
+    width: 80%;
+  }
+  
+  .button-row {
+    padding-top: 5px;
+  }
+  
+  .button-row a {
+    margin-right: 8px;
+  }
+  
+  .aLink{
+    float: right;
+    padding-right: 60px;
+     color:#556B2F;
+  }
+  .sigin{
+    color:#556B2F; ;
+  }
+ 
+  .log{
+    height: 100px;
+    width: 100px;
+  }
+
+  .log-btn{
+    background-color: #556B2F;
+  }
+  .text-link{
+    color: #556B2F;
+  }
+  .social{
+    height: 20px;
+    width: 30px;
+  }
+
+  
+   .share {
+    margin-top: 1rem;
+  }
+   .share a {
+    height: 2.5rem;
+    width: 3.5rem;
+    line-height: 3rem;
+    font-size: 1.7rem;
+   text-decoration: none;
+    color: #556B2F;
+    margin-right: 0.3rem;
+    text-align: center;
+  }
+  

@@ -1,0 +1,160 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<div class="main">
+  <div class="w-100 d-flex justify-content-end">
+    <mat-icon class="close-form me-2 fs-3" color="warning" matTooltip="close" (click)="close()" > close </mat-icon>
+  </div>
+  <div class="row d-flex justify-content-center align-items-center px-5">
+    <div class="">
+      <a class="mt-4 d-flex justify-content-center"
+        ><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9MNavHSpUgKda27YF-eN7ribePe4YBDXLMQ&usqp=CAU"
+          width="100"
+          height="100"
+      /></a>
+      <h2 class="register my-3 text-center fw-bold">Register</h2>
+      <!--  -->
+      <form class="p-4" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <h3 class="pb-2">Your Personal Details</h3>
+        <div class="form-group col-xs-12 col-sm-12 col-md-12">
+          <label class="mt-2 lable">Gender</label>
+          <div class="mt-2 mb-4">
+            <label class="me-2">
+              <input
+                class="me-1"
+                type="radio"
+                value="Male"
+                formControlName="gender"
+              />
+              <span class="radio">Male</span>
+            </label>
+            <label class="ms-3">
+              <input
+                class="me-1"
+                type="radio"
+                value="Female"
+                formControlName="gender"
+              />
+              <span class="radio">Female</span>
+            </label>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="form-group col-xs-12 col-sm-6 col-md-6">
+            <label class="lable py-2">First name </label>
+            <input
+              placeholder="First name"
+              class="form-control"
+              type="text"
+              formControlName="firstName"
+            />
+           
+          </div>
+          <div class="form-group col-xs-12 col-sm-6 col-md-6">
+            <label class="lable py-2">Last name</label>
+            <input
+              placeholder="Last name"
+              class="form-control"
+              type="text"
+              formControlName="lastName"
+            />
+           
+          </div>
+        </div>
+
+        <div class="row d-flex mt-4" formGroupName="dateOfBirth">
+          <label class="lable py-2">Date Of Birth</label>
+          <div class="form-group col-xs-12 col-sm-3 col-md-4">
+            <select class="form-select" formControlName="day">
+              <option hidden>Day</option>
+              <option *ngFor="let topping of dayList; let i = index">
+                {{ topping }}
+              </option>
+            </select>
+          </div>
+          <div class="form-group col-xs-12 col-sm-3 col-md-4">
+            <select class="form-select" formControlName="month">
+              <option hidden>Month</option>
+              <option *ngFor="let topping of monthList; let i = index">
+                {{ topping }}
+              </option>
+            </select>
+          </div>
+          <div class="form-group col-xs-12 col-sm-3 col-md-4">
+            <select class="form-select" formControlName="year">
+              <option hidden>Year</option>
+              <option *ngFor="let topping of yearList; let i = index">
+                {{ topping }}
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="my-4">
+          <label class="form-label lable">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            formControlName="emailAdress"
+          />
+          
+        </div>
+        <h3 class="pb-2">Your Contact Information</h3>
+        <div class="my-3">
+          <label class="form-label lable">Phone Number:</label>
+          <input
+            type="number"
+            class="form-control"
+            formControlName="moblieNum"
+          />
+        </div>
+        <h3 class="pb-2">Your Password</h3>
+        <div class="my-3">
+          <label class="form-label lable">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Password"
+            formControlName="password"
+          />
+        </div>
+
+        <div class="my-3">
+          <label class="form-label lable">Confirm Password</label>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Confirm Password"
+            formControlName="confirmPassword"
+          />
+          <small *ngIf="passwordMatchError" class="text-danger">
+            Password does not match
+          </small>
+        </div>
+        <button type="submit" class="btn w-100">Register</button>
+        <div class="text-center mt-3">
+          <a style="color: #663a2a" type="button"
+            >No account?Click HERE to register</a
+          >
+          <div class="my-3 d-none d-sm-block"><h6>or</h6></div>
+          <div class=" icons d-none d-sm-block">
+            <a href="#" class="fab fa-facebook-f fs-3 me-1"></a>
+            <a href="#" class="fab fa-twitter fs-3 me-1" ></a>
+            <a href="#" class="fab fa-instagram fs-3 me-1"></a>
+            <a href="#" class="fab fa-linkedin fs-3 me-1"></a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

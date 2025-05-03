@@ -1,0 +1,17 @@
+{
+    "univeristy":[{
+        "id": 1 ,
+        "name":"kkk",
+        "description":"bhhhh",
+        "img" : " ",
+        "faculty":[
+            {"id" : 1}
+        ]
+    }] ,
+    "faculty" :[{
+        "id" :1 ,
+        "name":"kkk",
+        "description":"bhhhh",
+        "img" : " "
+    }]
+}

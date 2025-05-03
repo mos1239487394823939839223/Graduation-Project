@@ -1,0 +1,62 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~material-design-icons/iconfont/material-icons.css';
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+.data-table {
+  scrollbar-width: auto;
+  scrollbar-color: #002d40 #ffffff;
+}
+.data-table::-webkit-scrollbar {
+  width: 16px;
+}
+
+.data-table::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.data-table::-webkit-scrollbar-thumb {
+  background-color: #002d40;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+.mat-snack-bar-container {
+  background-color: #eee;
+  color: #4bb543;
+  margin-bottom: 100px !important;
+}
+.mat-snack-bar-container button {
+  color: #002d40;
+}
+.mat-paginator
+  {
+    color: #002d40 !important;
+  }
+@media (min-width: 992px) {
+  .fixed-height{
+      height: 650px;
+  }
+}
+@media (max-width: 991.98px) {
+  .fixed-height{
+      height:auto
+  }
+  .child-height{
+      height: 500px;
+  }
+}
+  .spinner-row{
+    position: sticky;
+    margin: 70px auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    left: 30%;
+  }

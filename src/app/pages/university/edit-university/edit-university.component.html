@@ -1,0 +1,44 @@
+<div class="main">
+    <div class="mat-typography d-flex justify-content-between">
+      <h2 class="mat-headline">Edie University</h2>
+      <mat-icon class="close-form fw-bold" (click)="closeDialog()">close</mat-icon>
+    </div>
+    <form  [formGroup]="uniForm">
+      <mat-form-field class="my-0 mx-auto row w-100" appearance="outline">
+        <mat-label>University Name</mat-label>
+        <input type="string" matInput required formControlName="name" placeholder="University Name">
+        <mat-error *ngIf="uniForm.controls['name'].hasError('required')">
+           يجب ادخال الاسم
+        </mat-error>
+       
+      </mat-form-field>
+
+      <mat-form-field class="my-0 mx-auto row w-100" appearance="outline">
+        <mat-label>Img</mat-label>
+        <input type="string" matInput required formControlName="img" placeholder="image">
+        <mat-error *ngIf="uniForm.controls['img'].hasError('required')">
+           يجب ادخال الصورة
+        </mat-error>
+       
+      </mat-form-field>
+
+      <mat-form-field class="my-0 mx-auto row w-100" appearance="outline">
+        <mat-label>Decription</mat-label>
+        <input type="string" matInput required formControlName="decription" placeholder="Decription" >
+        <mat-error *ngIf="uniForm.controls['decription'].hasError('required')">
+           يجب ادخال الوصف
+        </mat-error>
+       
+      </mat-form-field>
+     
+      
+    </form>
+
+    <div class="w-100 px-2 d-flex justify-content-end">
+      <button class=" btn mx-1" color="blue" mat-raised-button (click)=" updateUniversity()" >Edit</button>
+      <button class=" btn mx-1" mat-raised-button color="blue"  >
+              Close</button>
+    </div>
+</div>
+
+

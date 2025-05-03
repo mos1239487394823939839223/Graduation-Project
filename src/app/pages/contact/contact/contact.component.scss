@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #556B2F;
+}
+
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* account */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  border: 0.1rem solid #556B2F;
+  background: #556B2F;
+  color: rgb(245, 237, 242);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.btn:hover {
+  background: rgb(16, 1, 10);
+  color:rgb(17, 5, 13);
+}
+.account-form {
+  position: fixed;
+  top: 0;
+  right: -105%;
+  width: 35rem;
+  background: #556B2F;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  justify-content: center;
+  height: 100%;
+  z-index: 1200;
+  padding: 2rem;
+  text-align: center;
+}
+.account-form.active {
+  right: 0;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+}
+.account-form #close-form {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: #444;
+}
+.account-form #close-form:hover {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+.account-form form {
+  border: 0.1rem solid #556B2F;
+  padding: 2rem;
+  display: none;
+}
+.account-form form.active {
+  display: block;
+}
+.account-form form h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #444;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.account-form form .box {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border: 0.1rem solid #556B2F;
+  font-size: 1.6rem;
+  margin: 0.7rem 0;
+}
+.account-form form .flex {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.account-form form .flex label {
+  font-size: 1.5rem;
+  color: #777;
+  cursor: pointer;
+}
+.account-form form .flex a {
+  font-size: 1.5rem;
+  color: #777;
+  margin-left: auto;
+}
+.account-form form .flex a:hover {
+  text-decoration: underline;
+  color: #cfd6c2(245, 42, 164);
+}
+.account-form form .btn {
+  width: 100%;
+}
+.account-form .buttons .btn {
+  margin: 0 0.5rem;
+}
+.account-form .buttons .btn.active {
+  background: #556B2F;
+  color: #f5f4f4;
+}
+.heading-link {
+    text-align: center;
+    background: #d6e4bc;
+    background-size: cover;
+    background-position: center;
+  }
+  .heading-link h3 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: #0c0101;
+  }
+/* Footer */
+.footer {
+    background: #556B2F;
+    
+  }
+  .footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
+    gap: 2rem;
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    color: #060606;
+    padding: 1rem 0;
+  }
+  .footer .box-container .box h3 i {
+    color: rgb(16, 15, 16);
+  }
+  .footer .box-container .box .share {
+    margin-top: 1rem;
+  }
+  .footer .box-container .box .share a {
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+    font-size: 1.7rem;
+    background-color: rgb(242, 234, 239);
+    color:  #556B2F;
+    margin-right: 0.5rem;
+    text-align: center;
+  }
+  .footer .box-container .box .share a:hover {
+    background-color: #f9f8fa;
+  }
+  .footer .box-container .box .link {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #ede8e8;
+    padding: 0.5rem 0;
+    display: block;
+  }
+  .footer .box-container .box .link:hover {
+    color: rgb(232, 226, 230);
+    text-decoration: underline;
+  }
+  .footer .box-container .box p {
+    font-size: 1rem;
+    line-height: 2;
+    color: #f0f0f0;
+    padding: 1rem 0;
+  }
+  .footer .box-container .box .email {
+    width: 100%;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    border: 0.1rem solid #556B2F;
+    margin-bottom: 1rem;
+  }
+  .footer .box-container .box .btn{
+    border: 0.1rem solid rgb(232, 228, 230);
+  }
+  .footer .box-container .box .btn:hover{
+   background-color: white;
+  }
+  section {
+    padding: 5rem 10%;
+  }
+
+  /*Contact*/
+  .contact .heading{
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: #0b0505;
+    text-align: center;
+    margin: 5rem 0;
+  }
+  .contact .icons-container {
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 1rem;
+}
+.contact .icons-container .icons {
+    text-align: center;
+    padding: 1rem 1rem;
+    border: 0.1rem solid #556B2F;
+    background:#556B2F;
+}
+.contact .icons-container .icons i {
+    height: 6rem;
+   
+    line-height: 6rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 0.5rem;
+    color: #040404;
+    background:#556B2F;
+}
+.contact .icons-container .icons h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #0c0202;
+    padding: 0.5rem 0;
+}
+.contact .icons-container .icons p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #0d0b0b;
+}
+.contact .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  
+}
+.contact .row .image {
+    flex: 1 1 30rem;
+    
+}
+.contact .row .image img {
+    width: 100%;
+}
+.contact .row form {
+    flex: 1 1 40rem;
+    border: 0.1rem solid #556B2F;
+    padding: 2rem;
+
+   
+}
+.contact .row form h3 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: #fbf5f5;
+    padding-bottom: 1rem;
+}
+.contact .row form .box {
+    width: 100%;
+    height: 1rem;
+    padding: 1.2rem 1.4rem;
+    border: 0.1rem solid#556B2F;
+    font-size: 1.6rem;
+    margin: 0.7rem 0;
+}
+.contact .row form .boxx {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border: 0.1rem solid #556B2F;
+  font-size: 1.6rem;
+  margin: 0.7rem 0;
+}
+.contact .row form .box:focus {
+    background:#556B2F;
+    color: #110e0e;
+}
+.contact .row form .box:focus::placeholder {
+    color: #090909;
+}
+.contact .row form textarea {
+    height: 10rem;
+    resize: none;
+}
+
+ 
+  .faq .accordion-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+.faq .accordion-container .accordion {
+    flex: 1 1 30rem;
+    border: 0.1rem solid#556B2F;
+}
+.faq .accordion-container .accordion.active .accordion-heading {
+    background: #556B2F;
+}
+.faq .accordion-container .accordion.active .accordion-heading h3 {
+    color: #faf9f9;
+}
+.faq .accordion-container .accordion.active .accordion-heading i {
+    color: #eee4e4;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.faq .accordion-container .accordion.active .accordion-content {
+    display: block;
+}
+.faq .accordion-container .accordion .accordion-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    cursor: pointer;
+    padding: 1.5rem;
+}
+.faq .accordion-container .accordion .accordion-heading h3 {
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #1a1616;
+}
+.faq .accordion-container .accordion .accordion-heading i {
+    font-size: 2rem;
+    color: #556B2F;
+}
+.faq .accordion-container .accordion .accordion-content {
+    padding: 1.5rem;
+    font-size: 1rem;
+    line-height: 2;
+    color: #f0ebeb;
+    border-top: 0.1rem solid #556B2F;
+    display: none;
+}
+
+ 

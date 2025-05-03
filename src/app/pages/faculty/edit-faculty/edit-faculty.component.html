@@ -1,0 +1,45 @@
+<div class="main">
+    <div class="mat-typography d-flex justify-content-between">
+      <h2 class="mat-headline">Edit Faculty</h2>
+      <mat-icon class="close-form fw-bold" (click)="closeDialog()">close</mat-icon>
+    </div>
+    <form  [formGroup]="facultyForm">
+      <mat-form-field class="my-0 mx-auto row w-100" appearance="outline">
+        <mat-label>Faculty Name</mat-label>
+        <input type="string" matInput required formControlName="name" placeholder="Faculty Name" >
+        <mat-error *ngIf="facultyForm.controls['name'].hasError('required')">
+           يجب ادخال الاسم
+        </mat-error>
+       
+      </mat-form-field>
+
+      <mat-form-field class="my-0 mx-auto row w-100" appearance="outline">
+        <mat-label>Img</mat-label>
+        <input type="string" matInput required formControlName="img" placeholder="image" >
+        <mat-error *ngIf="facultyForm.controls['img'].hasError('required')">
+           يجب ادخال الصورة
+        </mat-error>
+       
+      </mat-form-field>
+
+      <mat-form-field class="my-0 mx-auto row w-100" appearance="outline">
+        <mat-label>Decription</mat-label>
+        <input type="string" matInput required formControlName="decription" placeholder="Decription">
+        <mat-error *ngIf="facultyForm.controls['decription'].hasError('required')">
+           يجب ادخال الوصف
+        </mat-error>
+       
+      </mat-form-field>
+     
+      
+    </form>
+
+    <div class="w-100 px-2 d-flex justify-content-end">
+      <button class=" btn mx-1" color="blue" mat-raised-button (click)=" updateFaculty()" >Edit</button>
+      <button class=" btn mx-1" mat-raised-button color="blue" (click)="closeDialog()"  >
+              Close</button>
+    </div>
+</div>
+
+
+
