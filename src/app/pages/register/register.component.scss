@@ -1,0 +1,51 @@
+h1,
+h2,
+h3,
+span,
+label {
+  font-family: "Roboto", "Noto Kufi Arabic";
+}
+$variable: #556B2F;
+.register {
+  color: $variable;
+  font-size: 20px;
+}
+h3 {
+  font-weight: bold;
+  font-size: 15px;
+  color: $variable;
+  border-bottom: 1px solid #ddd;
+}
+input {
+  border: none;
+  background-color: #f3f3f3;
+}
+.lable {
+  font-size: 12px;
+  font-weight: 700;
+}
+.radio {
+  font-size: 12px;
+}
+.btn {
+  background-color: $variable;
+  color: white;
+}
+.font {
+  font-size: 80%;
+  color: red;
+}
+
+a{
+text-decoration: none;
+color: #556B2F;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.close-form{
+  font-weight: bold;
+  color: red;
+}

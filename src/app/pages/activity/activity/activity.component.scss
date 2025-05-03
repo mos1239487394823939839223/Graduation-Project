@@ -1,0 +1,47 @@
+.btn {
+    background-color:#556B2F;
+    color: white;
+    width: 80px;
+    height: 40px;
+  }
+  .btn:hover{
+    background-color: transparent;
+    color:#556B2F;
+  }
+  
+  .table-button {
+    background-color: transparent;
+    color:#556B2F;
+    
+    cursor: pointer;
+  }
+  .table-button:hover,
+  .add-icon:hover {
+    color: red;
+  }
+  
+  .add-icon {
+    cursor: pointer;
+  }
+  
+  .table {
+    width: 150%;
+  }
+
+  .search{
+    height: 50.3px;
+    border: 1px solid #556B2F;;
+   }
+   .search-input{
+      width: 330px;
+   }
+   
+   .search-icon{
+     background-color:#556B2F;
+     width: 50px;
+     height: 49px;
+     padding-top: 10px;
+     padding-left: 10px;
+   }
+  
+  

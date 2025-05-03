@@ -1,0 +1,180 @@
+.flip-card {
+    background-color: transparent;
+   
+    height: 270px;
+    perspective: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+ 
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 2em;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: black;
+    border: 4px solid #556B2F;
+  }
+  
+  .profile-image {
+    background-color: transparent;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5em;
+    width: 120px;
+    height: 150px;
+    margin-left: 50px;
+  }
+
+  img {
+    height: 100%;
+    width: 90%;
+  }
+  
+  .pfp {
+    border-radius: 35em;
+    fill: #556B2F;
+  }
+  
+  .name {
+    margin-top: 15px;
+    font-size: 27px;
+    color:rgb(244, 240, 243);
+    font-weight: bold;
+  }
+  
+  .flip-card-back {
+    background-color:white;
+    border: 4px solid #556B2F;
+    transform: rotateY(180deg);
+    padding: 11px;
+  }
+  
+  .description {
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  
+  .socialbar {
+    background-color: transparent;
+    border-radius: 3em;
+    width: 90%;
+    padding: 14px;
+    margin-top: 11px;
+    margin-left: 10px;
+    word-spacing: 24px;
+    color: white;
+  }
+  
+  .socialbar img {
+    transition: 0.4s;
+    width: 20px;
+    height: 20px;
+    color:#556B2F;
+  }
+  
+  .socialbar svg:hover {
+    color: white;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .cssbuttons-io-button {
+    background: #556B2F;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em#556B2F;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #556B2F;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #556B2F;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+  
+
+
+.card {
+    position: relative;
+    width: 30%;
+    height: 130px;
+    background: #556B2F;
+    border-radius: 20px;
+    padding: 20px;
+    padding-left: 110px;
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    filter: drop-shadow(5px 5px 0px #c7e494)
+    drop-shadow(5px 5px 0px #c2f171)
+    drop-shadow(5px 5px 0px #212d01);
+    scale: 1.05;
+  }
+  
+  
+  
+  .title1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 40px;
+  }
+  
+ 
