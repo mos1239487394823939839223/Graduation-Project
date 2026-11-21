@@ -1,27 +1,58 @@
-# CandiMeterUi
+<div align="center">
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
+# 🎓 CandiMeter — University & Internship Platform
 
-## Development server
+**Graduation project: a web platform that connects students with universities, faculties, activities and internship opportunities.**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![Angular](https://img.shields.io/badge/Angular_14-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Angular Material](https://img.shields.io/badge/Angular_Material-3F51B5?style=for-the-badge&logo=angular&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![RxJS](https://img.shields.io/badge/RxJS-B7178C?style=for-the-badge&logo=reactivex&logoColor=white)
 
-## Code scaffolding
+</div>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## ✨ Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- 🏛️ Browse **universities** and their **faculties**
+- 🎯 Explore student **activities** and **internship** opportunities
+- 📝 **Registration & login** with form validation (including password confirmation)
+- 🧭 Feature modules with lazy-loaded routing, guards and shared components
+- 🎨 Responsive UI with Angular Material, Bootstrap and SweetAlert2 dialogs
+- 🧪 Mock backend with json-server for local development
 
-## Running unit tests
+## 📁 Structure
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+src/app/
+  auth/      Authentication (login, register, guards)
+  core/      Singleton services and interceptors
+  domine/    Domain models & services: university, faculty, activity, user, login
+  pages/     Home, about, contact, university, faculty, activity, register
+  shared/    Reusable components and pipes
+```
 
-## Running end-to-end tests
+## 🚀 Getting Started
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+git clone https://github.com/mos1239487394823939839223/Graduation-Project.git
+cd Graduation-Project
+npm install
+npm start              # http://localhost:4200
+```
 
-## Further help
+| Command | Description |
+|---|---|
+| `npm start` | Dev server |
+| `npm run build` | Production build → `dist/` |
+| `npm test` | Unit tests (Karma + Jasmine) |
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+<div align="center">
+
+Built by **[Mustafa Anwer Hamed](https://github.com/mos1239487394823939839223)**
+
+</div>
